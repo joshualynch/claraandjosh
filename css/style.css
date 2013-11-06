@@ -11,7 +11,8 @@ h1 {
 
 h1 span.rule {
   background: #fff;
-  padding: 20px;
+  line-height: 43px;
+  padding: 0 20px;
   position: relative;
   top: -32px;	
 }
@@ -102,6 +103,18 @@ section {
 	text-transform: none;
 }
 
+#title h1 span.date {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 24.5px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+#countdown {
+	position: relative;
+	bottom: 20px;
+}
+
 .img-circle.pull-right img {
 	margin:0 0 10px 10px;
 }
@@ -120,8 +133,45 @@ section {
 	margin: 5px 20px 10px 0;
 }
 
+#disqus_thread .clip {
+	display: none;
+}
+
 footer {
 	background-color: #eee;
 	margin-top: 100px;
 	padding: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	#title h1 span.date {
+		font-size: 22px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	h1 {
+		border-top: none;
+		padding: 0;
+	}
+
+	header, section {
+		padding: 75px 0 50px;
+	}
+	
+	#wedding h2 {
+		margin: 50px 0 15px 0;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	#title h1 span.date {
+		font-size: 16px;
+	}
+	
 }
