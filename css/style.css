@@ -115,6 +115,10 @@ section {
 	bottom: 20px;
 }
 
+#address-form #countdown {
+	bottom: 0;
+}
+
 .img-circle.pull-right img {
 	margin:0 0 10px 10px;
 }
