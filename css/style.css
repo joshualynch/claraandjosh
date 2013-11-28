@@ -126,7 +126,7 @@ section {
 #wedding h2 {
 	font-size: 17px;
 	line-height: normal;
-	margin: 50px 0 15px 160px;
+	margin: 20px 0 15px 160px;
 }
 
 #wedding i {
@@ -135,6 +135,43 @@ section {
 
 #wedding img {
 	margin: 5px 20px 10px 0;
+}
+
+.tabbable {
+	margin-top: 50px;
+}
+
+#onisland,
+#offisland {
+	padding-top: 20px;
+}
+
+.tablesorter-header {
+	position: relative;
+}
+
+.tablesorter-headerDesc .icon-chevron-up,
+.tablesorter-headerAsc .icon-chevron-down {
+	display: none;
+}
+
+.tablesorter-header .icon-chevron-up,
+.tablesorter-header .icon-chevron-down {
+	position: absolute;
+	right: 3px;
+}
+
+.tablesorter-header .icon-chevron-up {
+	bottom: 17px;
+}
+
+.tablesorter-header .icon-chevron-down {
+	bottom: 7px;
+}
+
+small.muted.pull-right {
+	bottom: 15px;
+	position: relative;
 }
 
 #disqus_thread .clip {
@@ -169,13 +206,21 @@ footer {
 	#wedding h2 {
 		margin: 50px 0 15px 0;
 	}
+	
+	.tabbable .nav-tabs {
+		border: none;
+	}
 
 }
 
 @media (max-width: 480px) {
 
 	#title h1 span.date {
-		font-size: 16px;
+		font-size: 14px;
+	}
+	
+	.tabbable .nav-tabs {
+		border: none;
 	}
 	
 }
