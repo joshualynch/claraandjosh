@@ -103,16 +103,11 @@ section {
 	text-transform: none;
 }
 
-#title h1 span.date {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+#title h2 {
 	font-size: 24.5px;
-	font-style: normal;
 	font-weight: normal;
-}
-
-#countdown {
-	position: relative;
-	bottom: 20px;
+	line-height: 1.2;
+	text-transform: none;
 }
 
 #address-form #countdown {
@@ -126,11 +121,7 @@ section {
 #wedding h2 {
 	font-size: 17px;
 	line-height: normal;
-	margin: 20px 0 15px 0;
-}
-
-#overview h2 {
-	margin-left: 160px;
+	margin-bottom: 15px;
 }
 
 #wedding i {
@@ -141,13 +132,8 @@ section {
 	margin: 5px 20px 10px 0;
 }
 
-.tabbable {
-	margin-top: 50px;
-}
-
-#onisland,
-#offisland {
-	padding-top: 20px;
+.accordion-inner {
+	border-top: none;
 }
 
 #onisland img,
@@ -183,7 +169,8 @@ small.muted.pull-right {
 	position: relative;
 }
 
-#registry {
+#registry,
+#trip {
 	margin-top: 100px;
 }
 
@@ -219,14 +206,6 @@ footer {
 
 }
 
-@media (min-width: 768px) and (max-width: 979px) { 
-
-	#title h1 span.date {
-		font-size: 22px;
-	}
-
-}
-
 @media (max-width: 767px) {
 
 	h1 {
@@ -237,14 +216,6 @@ footer {
 	header, section {
 		padding: 75px 0 50px;
 	}
-	
-	#wedding h2 {
-		margin: 50px 0 15px 0;
-	}
-	
-	.tabbable .nav-tabs {
-		border: none;
-	}
 
 	#registry .span4 {
 		margin: 20px 0;
@@ -254,17 +225,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-
-	#title h1 span.date {
-		font-size: 14px;
-	}
 	
-	.tabbable .nav-tabs {
-		border: none;
-	}
-	
-	#registry img {
-	
+	#proposal h1 {
+	font-size: 36px;
 	}
 	
 }
