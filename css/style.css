@@ -9,7 +9,7 @@ h1 {
 	border-top: 1px solid #333;
 }
 
-h1 span.rule {
+.rule {
   background: #fff;
   line-height: 43px;
   padding: 0 20px;
@@ -55,6 +55,10 @@ textarea {
 	font-size: 14px;
 	font-weight: 800;	
 	text-transform: uppercase;
+}
+
+.dropdown-menu {
+	text-transform: none;
 }
 
 .navbar-search .search-query {
@@ -118,10 +122,17 @@ section {
 	margin:0 0 10px 10px;
 }
 
-#wedding h2 {
+#wedding h2,
+#whidbey h2,
+#seattle h2 {
 	font-size: 17px;
 	line-height: normal;
 	margin-bottom: 15px;
+}
+
+#whidbey h2,
+#seattle h2 {
+	margin-top: 0;
 }
 
 #wedding i {
@@ -188,6 +199,47 @@ small.muted.pull-right {
 	-webkit-transition: opacity ease 1s;
 }
 
+#ebeys-landing,
+#seattle-skyline {
+	background-size: cover;
+	height: 380px;
+	margin-bottom: 90px;
+}
+
+#ebeys-landing {
+	background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/ebeys-landing-bluff-hike-whidbey-island-1199.jpg);
+	background-position: center center;
+}
+
+#seattle-skyline {
+	background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/seattle-skyline-space-needle-mount-rainier-1199.jpg);
+	background-position: left top;
+}
+
+.wayfarers {
+	font-family: 'Gentium Book Basic', Georgia, serif;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 1;
+	position: relative;
+	text-transform: none;
+	top: -92px;
+}
+
+#whidbey .rule,
+#seattle .rule {
+	top: -92px;
+}
+
+#whidbey .row-fluid, 
+#seattle .row-fluid {
+	margin-bottom: 40px;
+}
+
+#seattle li {
+	line-height: 30px;
+}
+
 #disqus_thread .clip {
 	display: none;
 }
@@ -202,6 +254,30 @@ footer {
 
 	.bedbathbeyond {
 		float: right;
+	}
+	
+	#ebeys-landing {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/ebeys-landing-bluff-hike-whidbey-island-1920.jpg);
+		height: 600px;
+	}
+	
+	#seattle-skyline {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/seattle-skyline-space-needle-mount-rainier-1920.jpg);
+		height: 600px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	#seattle-skyline {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/seattle-skyline-space-needle-mount-rainier-979.jpg);
+		height: 300px;
+	}
+	
+	#ebeys-landing {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/ebeys-landing-bluff-hike-whidbey-island-979.jpg);
+		height: 300px;
 	}
 
 }
@@ -221,13 +297,38 @@ footer {
 		margin: 20px 0;
 		text-align: center;
 	}
+	
+	#seattle-skyline {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/seattle-skyline-space-needle-mount-rainier-767.jpg);
+		height: 240px;
+	}
+	
+	#ebeys-landing {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/ebeys-landing-bluff-hike-whidbey-island-767.jpg);
+		height: 240px;
+	}
 
 }
 
 @media (max-width: 480px) {
+
+	#seattle-skyline {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/seattle-skyline-space-needle-mount-rainier-480.jpg);
+		height: 240px;
+	}	
 	
-	#proposal h1 {
-	font-size: 36px;
+	#ebeys-landing {
+		background-image: url(https://s3-us-west-2.amazonaws.com/www.claraandjosh.com/img/ebeys-landing-bluff-hike-whidbey-island-480.jpg);
+		height: 240px;
 	}
 	
+	.wayfarers {
+		font-size: 21px;
+	}
+	
+	.rule {
+		font-size: 32px;
+		padding: 0;
+		top: -105px;
+	}
 }
